@@ -5,22 +5,11 @@ Scenario: Obtener información de un usuario de GitHub
   And path 'users/octocat'
   When method GET
   Then status 200
-  And print 'Respuesta primer escenario:', response
   And match response.login == 'octocat'
   And match response.name == 'The Octocat'
   And match response.company == 'GitHub'
   And match response.location == 'San Francisco'
   And match response.public_repos == 9  # Corregí "repositories" a "public_repos"
-
-Scenario: Obtener información de un usuario de GitHub
-  Given url 'https://api.github.com'
-  And path 'users/octocat'
-  When method GET
-  Then status 200
-  And def userLogin = response.login
-  And print 'DEPURANDO SEGUNDO ESCENARIO'
-  And print 'Login del usuario:', userLogin
-
   
   Scenario: Obtener información de un usuario de GitHub
   Given url 'https://api.github.com'
@@ -29,5 +18,4 @@ Scenario: Obtener información de un usuario de GitHub
   Then status 200
   And def userLogin = response.login
   And print 'Login del usuario:', userLogin
-  And print response.public_repos
-  And print response.type == 'public' == 6  
+  And print response.public_repos == 6
