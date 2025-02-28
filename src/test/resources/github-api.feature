@@ -30,4 +30,4 @@ Scenario: Obtener información de un usuario de GitHub
   And def userLogin = response.login
   And print 'Login del usuario:', userLogin
   And print response.public_repos
-  And print response.private_repos  
+  And print response.type == 'public' == 6  
