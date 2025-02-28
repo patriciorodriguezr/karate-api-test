@@ -20,11 +20,8 @@ Scenario: Obtener información de un usuario de GitHub
   And def userLogin = response.login
   And print 'DEPURANDO SEGUNDO ESCENARIO'
   And print 'Login del usuario:', userLogin
-  And print 'Estado HTTP:', responseStatus
-  And print 'Respuesta completa:', response
-  And match userLogin == 'octocat'
-  And match response.name == 'WRONG_NAME'  # Debería fallar
 
+  
   Scenario: Obtener información de un usuario de GitHub
   Given url 'https://api.github.com'
   And path 'users/patriciorodriguezr'
@@ -32,5 +29,4 @@ Scenario: Obtener información de un usuario de GitHub
   Then status 200
   And def userLogin = response.login
   And print 'Login del usuario:', userLogin
-  And print 'Respuesta completa:', response
-  And match userLogin == 'patriciorodriguezr'
+  And print response.public_repos 

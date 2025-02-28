@@ -434,3 +434,432 @@ src/test/resources/github-api.feature:26
 }
  
 12:37:12.364 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
+12:40:35.414 [main]  INFO  com.intuit.karate - Karate version: 1.5.1
+12:40:35.920 [main]  WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+12:40:37.948 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://api.github.com/users/octocat
+1 > Host: api.github.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:40:39.039 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1017
+1 < 200
+1 < Date: Fri, 28 Feb 2025 15:40:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Cache-Control: public, max-age=60, s-maxage=60
+1 < Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+1 < ETag: W/"63786d747e0eb7ba3188a58b2462ad3e5cc448c27c8a135b6368823087eb3a05"
+1 < Last-Modified: Sat, 22 Feb 2025 12:25:16 GMT
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < x-github-api-version-selected: 2022-11-28
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 < Access-Control-Allow-Origin: *
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < X-Frame-Options: deny
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 0
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Content-Security-Policy: default-src 'none'
+1 < Server: github.com
+1 < Accept-Ranges: bytes
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 54
+1 < X-RateLimit-Reset: 1740759812
+1 < X-RateLimit-Resource: core
+1 < X-RateLimit-Used: 6
+1 < X-GitHub-Request-Id: F2C0:2865BE:168323:1AD65D:67C1D8F6
+{"login":"octocat","id":583231,"node_id":"MDQ6VXNlcjU4MzIzMQ==","avatar_url":"https://avatars.githubusercontent.com/u/583231?v=4","gravatar_id":"","url":"https://api.github.com/users/octocat","html_url":"https://github.com/octocat","followers_url":"https://api.github.com/users/octocat/followers","following_url":"https://api.github.com/users/octocat/following{/other_user}","gists_url":"https://api.github.com/users/octocat/gists{/gist_id}","starred_url":"https://api.github.com/users/octocat/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/octocat/subscriptions","organizations_url":"https://api.github.com/users/octocat/orgs","repos_url":"https://api.github.com/users/octocat/repos","events_url":"https://api.github.com/users/octocat/events{/privacy}","received_events_url":"https://api.github.com/users/octocat/received_events","type":"User","user_view_type":"public","site_admin":false,"name":"The Octocat","company":"@github","blog":"https://github.blog","location":"San Francisco","email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":8,"public_gists":8,"followers":17090,"following":9,"created_at":"2011-01-25T18:44:36Z","updated_at":"2025-02-22T12:25:16Z"}
+
+12:40:39.247 [main]  INFO  com.intuit.karate - [print] Respuesta primer escenario: {
+  "login": "octocat",
+  "id": 583231,
+  "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+  "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/octocat",
+  "html_url": "https://github.com/octocat",
+  "followers_url": "https://api.github.com/users/octocat/followers",
+  "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+  "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+  "organizations_url": "https://api.github.com/users/octocat/orgs",
+  "repos_url": "https://api.github.com/users/octocat/repos",
+  "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/octocat/received_events",
+  "type": "User",
+  "user_view_type": "public",
+  "site_admin": false,
+  "name": "The Octocat",
+  "company": "@github",
+  "blog": "https://github.blog",
+  "location": "San Francisco",
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 8,
+  "public_gists": 8,
+  "followers": 17090,
+  "following": 9,
+  "created_at": "2011-01-25T18:44:36Z",
+  "updated_at": "2025-02-22T12:25:16Z"
+}
+ 
+12:40:39.341 [main]  ERROR com.intuit.karate - src/test/resources/github-api.feature:11
+And match response.company == 'GitHub'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '@github'
+  'GitHub'
+
+src/test/resources/github-api.feature:11
+12:40:39.369 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://api.github.com/users/octocat
+1 > Host: api.github.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:40:39.674 [main]  DEBUG com.intuit.karate - response time in milliseconds: 237
+1 < 200
+1 < Date: Fri, 28 Feb 2025 15:40:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Cache-Control: public, max-age=60, s-maxage=60
+1 < Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+1 < ETag: W/"63786d747e0eb7ba3188a58b2462ad3e5cc448c27c8a135b6368823087eb3a05"
+1 < Last-Modified: Sat, 22 Feb 2025 12:25:16 GMT
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < x-github-api-version-selected: 2022-11-28
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 < Access-Control-Allow-Origin: *
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < X-Frame-Options: deny
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 0
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Content-Security-Policy: default-src 'none'
+1 < Server: github.com
+1 < Accept-Ranges: bytes
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 53
+1 < X-RateLimit-Reset: 1740759812
+1 < X-RateLimit-Resource: core
+1 < X-RateLimit-Used: 7
+1 < X-GitHub-Request-Id: F2C1:1444AC:16255F:1A788C:67C1D8F7
+{"login":"octocat","id":583231,"node_id":"MDQ6VXNlcjU4MzIzMQ==","avatar_url":"https://avatars.githubusercontent.com/u/583231?v=4","gravatar_id":"","url":"https://api.github.com/users/octocat","html_url":"https://github.com/octocat","followers_url":"https://api.github.com/users/octocat/followers","following_url":"https://api.github.com/users/octocat/following{/other_user}","gists_url":"https://api.github.com/users/octocat/gists{/gist_id}","starred_url":"https://api.github.com/users/octocat/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/octocat/subscriptions","organizations_url":"https://api.github.com/users/octocat/orgs","repos_url":"https://api.github.com/users/octocat/repos","events_url":"https://api.github.com/users/octocat/events{/privacy}","received_events_url":"https://api.github.com/users/octocat/received_events","type":"User","user_view_type":"public","site_admin":false,"name":"The Octocat","company":"@github","blog":"https://github.blog","location":"San Francisco","email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":8,"public_gists":8,"followers":17090,"following":9,"created_at":"2011-01-25T18:44:36Z","updated_at":"2025-02-22T12:25:16Z"}
+
+12:40:39.691 [main]  INFO  com.intuit.karate - [print] DEPURANDO SEGUNDO ESCENARIO 
+12:40:39.694 [main]  INFO  com.intuit.karate - [print] Login del usuario: octocat 
+12:40:39.698 [main]  INFO  com.intuit.karate - [print] Estado HTTP: 200 
+12:40:39.704 [main]  INFO  com.intuit.karate - [print] Respuesta completa: {
+  "login": "octocat",
+  "id": 583231,
+  "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+  "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/octocat",
+  "html_url": "https://github.com/octocat",
+  "followers_url": "https://api.github.com/users/octocat/followers",
+  "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+  "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+  "organizations_url": "https://api.github.com/users/octocat/orgs",
+  "repos_url": "https://api.github.com/users/octocat/repos",
+  "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/octocat/received_events",
+  "type": "User",
+  "user_view_type": "public",
+  "site_admin": false,
+  "name": "The Octocat",
+  "company": "@github",
+  "blog": "https://github.blog",
+  "location": "San Francisco",
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 8,
+  "public_gists": 8,
+  "followers": 17090,
+  "following": 9,
+  "created_at": "2011-01-25T18:44:36Z",
+  "updated_at": "2025-02-22T12:25:16Z"
+}
+ 
+12:40:39.745 [main]  ERROR com.intuit.karate - src/test/resources/github-api.feature:26
+And match response.name == 'WRONG_NAME'  # Debería fallar
+js failed:
+>>>>
+01: 'WRONG_NAME'  # Debería fallar
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:14 Expected ; but found error
+'WRONG_NAME'  # Debería fallar
+              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1822)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:167)
+
+src/test/resources/github-api.feature:26
+12:40:39.762 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://api.github.com/users/patriciorodriguezr
+1 > Host: api.github.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:40:40.214 [main]  DEBUG com.intuit.karate - response time in milliseconds: 384
+1 < 200
+1 < Date: Fri, 28 Feb 2025 15:40:40 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Cache-Control: public, max-age=60, s-maxage=60
+1 < Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+1 < ETag: W/"d6977ef94dfa1513ac3caa610d5f37798988423cce5ae3a54bf264ed065a28eb"
+1 < Last-Modified: Thu, 27 Feb 2025 19:09:29 GMT
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < x-github-api-version-selected: 2022-11-28
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 < Access-Control-Allow-Origin: *
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < X-Frame-Options: deny
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 0
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Content-Security-Policy: default-src 'none'
+1 < Server: github.com
+1 < Accept-Ranges: bytes
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 52
+1 < X-RateLimit-Reset: 1740759812
+1 < X-RateLimit-Resource: core
+1 < X-RateLimit-Used: 8
+1 < X-GitHub-Request-Id: F2C2:1A1C0F:1708EE:1B5C4A:67C1D8F8
+{"login":"patriciorodriguezr","id":37450133,"node_id":"MDQ6VXNlcjM3NDUwMTMz","avatar_url":"https://avatars.githubusercontent.com/u/37450133?v=4","gravatar_id":"","url":"https://api.github.com/users/patriciorodriguezr","html_url":"https://github.com/patriciorodriguezr","followers_url":"https://api.github.com/users/patriciorodriguezr/followers","following_url":"https://api.github.com/users/patriciorodriguezr/following{/other_user}","gists_url":"https://api.github.com/users/patriciorodriguezr/gists{/gist_id}","starred_url":"https://api.github.com/users/patriciorodriguezr/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/patriciorodriguezr/subscriptions","organizations_url":"https://api.github.com/users/patriciorodriguezr/orgs","repos_url":"https://api.github.com/users/patriciorodriguezr/repos","events_url":"https://api.github.com/users/patriciorodriguezr/events{/privacy}","received_events_url":"https://api.github.com/users/patriciorodriguezr/received_events","type":"User","user_view_type":"public","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":6,"public_gists":0,"followers":0,"following":0,"created_at":"2018-03-16T15:50:05Z","updated_at":"2025-02-27T19:09:29Z"}
+
+12:40:40.252 [main]  INFO  com.intuit.karate - [print] Login del usuario: patriciorodriguezr 
+12:40:40.257 [main]  INFO  com.intuit.karate - [print] Respuesta completa: {
+  "login": "patriciorodriguezr",
+  "id": 37450133,
+  "node_id": "MDQ6VXNlcjM3NDUwMTMz",
+  "avatar_url": "https://avatars.githubusercontent.com/u/37450133?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/patriciorodriguezr",
+  "html_url": "https://github.com/patriciorodriguezr",
+  "followers_url": "https://api.github.com/users/patriciorodriguezr/followers",
+  "following_url": "https://api.github.com/users/patriciorodriguezr/following{/other_user}",
+  "gists_url": "https://api.github.com/users/patriciorodriguezr/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/patriciorodriguezr/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/patriciorodriguezr/subscriptions",
+  "organizations_url": "https://api.github.com/users/patriciorodriguezr/orgs",
+  "repos_url": "https://api.github.com/users/patriciorodriguezr/repos",
+  "events_url": "https://api.github.com/users/patriciorodriguezr/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/patriciorodriguezr/received_events",
+  "type": "User",
+  "user_view_type": "public",
+  "site_admin": false,
+  "name": null,
+  "company": null,
+  "blog": "",
+  "location": null,
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 6,
+  "public_gists": 0,
+  "followers": 0,
+  "following": 0,
+  "created_at": "2018-03-16T15:50:05Z",
+  "updated_at": "2025-02-27T19:09:29Z"
+}
+ 
+12:40:42.737 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
+12:43:56.755 [main]  INFO  com.intuit.karate - Karate version: 1.5.1
+12:43:57.265 [main]  WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+12:43:59.373 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://api.github.com/users/octocat
+1 > Host: api.github.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:44:00.474 [main]  DEBUG com.intuit.karate - response time in milliseconds: 1028
+1 < 200
+1 < Date: Fri, 28 Feb 2025 15:44:00 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Cache-Control: public, max-age=60, s-maxage=60
+1 < Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+1 < ETag: W/"63786d747e0eb7ba3188a58b2462ad3e5cc448c27c8a135b6368823087eb3a05"
+1 < Last-Modified: Sat, 22 Feb 2025 12:25:16 GMT
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < x-github-api-version-selected: 2022-11-28
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 < Access-Control-Allow-Origin: *
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < X-Frame-Options: deny
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 0
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Content-Security-Policy: default-src 'none'
+1 < Server: github.com
+1 < Accept-Ranges: bytes
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 51
+1 < X-RateLimit-Reset: 1740759812
+1 < X-RateLimit-Resource: core
+1 < X-RateLimit-Used: 9
+1 < X-GitHub-Request-Id: F2E1:D536A:170A93:1B71E5:67C1D9C0
+{"login":"octocat","id":583231,"node_id":"MDQ6VXNlcjU4MzIzMQ==","avatar_url":"https://avatars.githubusercontent.com/u/583231?v=4","gravatar_id":"","url":"https://api.github.com/users/octocat","html_url":"https://github.com/octocat","followers_url":"https://api.github.com/users/octocat/followers","following_url":"https://api.github.com/users/octocat/following{/other_user}","gists_url":"https://api.github.com/users/octocat/gists{/gist_id}","starred_url":"https://api.github.com/users/octocat/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/octocat/subscriptions","organizations_url":"https://api.github.com/users/octocat/orgs","repos_url":"https://api.github.com/users/octocat/repos","events_url":"https://api.github.com/users/octocat/events{/privacy}","received_events_url":"https://api.github.com/users/octocat/received_events","type":"User","user_view_type":"public","site_admin":false,"name":"The Octocat","company":"@github","blog":"https://github.blog","location":"San Francisco","email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":8,"public_gists":8,"followers":17090,"following":9,"created_at":"2011-01-25T18:44:36Z","updated_at":"2025-02-22T12:25:16Z"}
+
+12:44:00.711 [main]  INFO  com.intuit.karate - [print] Respuesta primer escenario: {
+  "login": "octocat",
+  "id": 583231,
+  "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+  "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/octocat",
+  "html_url": "https://github.com/octocat",
+  "followers_url": "https://api.github.com/users/octocat/followers",
+  "following_url": "https://api.github.com/users/octocat/following{/other_user}",
+  "gists_url": "https://api.github.com/users/octocat/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/octocat/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/octocat/subscriptions",
+  "organizations_url": "https://api.github.com/users/octocat/orgs",
+  "repos_url": "https://api.github.com/users/octocat/repos",
+  "events_url": "https://api.github.com/users/octocat/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/octocat/received_events",
+  "type": "User",
+  "user_view_type": "public",
+  "site_admin": false,
+  "name": "The Octocat",
+  "company": "@github",
+  "blog": "https://github.blog",
+  "location": "San Francisco",
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 8,
+  "public_gists": 8,
+  "followers": 17090,
+  "following": 9,
+  "created_at": "2011-01-25T18:44:36Z",
+  "updated_at": "2025-02-22T12:25:16Z"
+}
+ 
+12:44:00.823 [main]  ERROR com.intuit.karate - src/test/resources/github-api.feature:11
+And match response.company == 'GitHub'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '@github'
+  'GitHub'
+
+src/test/resources/github-api.feature:11
+12:44:00.865 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://api.github.com/users/octocat
+1 > Host: api.github.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:44:01.167 [main]  DEBUG com.intuit.karate - response time in milliseconds: 233
+1 < 200
+1 < Date: Fri, 28 Feb 2025 15:44:00 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Cache-Control: public, max-age=60, s-maxage=60
+1 < Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+1 < ETag: W/"63786d747e0eb7ba3188a58b2462ad3e5cc448c27c8a135b6368823087eb3a05"
+1 < Last-Modified: Sat, 22 Feb 2025 12:25:16 GMT
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < x-github-api-version-selected: 2022-11-28
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 < Access-Control-Allow-Origin: *
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < X-Frame-Options: deny
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 0
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Content-Security-Policy: default-src 'none'
+1 < Server: github.com
+1 < Accept-Ranges: bytes
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 50
+1 < X-RateLimit-Reset: 1740759812
+1 < X-RateLimit-Resource: core
+1 < X-RateLimit-Used: 10
+1 < X-GitHub-Request-Id: F2E2:723ED:16D6A3:1B3DFC:67C1D9C1
+{"login":"octocat","id":583231,"node_id":"MDQ6VXNlcjU4MzIzMQ==","avatar_url":"https://avatars.githubusercontent.com/u/583231?v=4","gravatar_id":"","url":"https://api.github.com/users/octocat","html_url":"https://github.com/octocat","followers_url":"https://api.github.com/users/octocat/followers","following_url":"https://api.github.com/users/octocat/following{/other_user}","gists_url":"https://api.github.com/users/octocat/gists{/gist_id}","starred_url":"https://api.github.com/users/octocat/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/octocat/subscriptions","organizations_url":"https://api.github.com/users/octocat/orgs","repos_url":"https://api.github.com/users/octocat/repos","events_url":"https://api.github.com/users/octocat/events{/privacy}","received_events_url":"https://api.github.com/users/octocat/received_events","type":"User","user_view_type":"public","site_admin":false,"name":"The Octocat","company":"@github","blog":"https://github.blog","location":"San Francisco","email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":8,"public_gists":8,"followers":17090,"following":9,"created_at":"2011-01-25T18:44:36Z","updated_at":"2025-02-22T12:25:16Z"}
+
+12:44:01.183 [main]  INFO  com.intuit.karate - [print] DEPURANDO SEGUNDO ESCENARIO 
+12:44:01.187 [main]  INFO  com.intuit.karate - [print] Login del usuario: octocat 
+12:44:01.190 [main]  INFO  com.intuit.karate - [print] Estado HTTP: 200 
+12:44:01.232 [main]  ERROR com.intuit.karate - src/test/resources/github-api.feature:25
+And match response.name == 'WRONG_NAME'  # Debería fallar
+js failed:
+>>>>
+01: 'WRONG_NAME'  # Debería fallar
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:14 Expected ; but found error
+'WRONG_NAME'  # Debería fallar
+              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1822)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:167)
+
+src/test/resources/github-api.feature:25
+12:44:01.257 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://api.github.com/users/patriciorodriguezr
+1 > Host: api.github.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:44:01.692 [main]  DEBUG com.intuit.karate - response time in milliseconds: 370
+1 < 200
+1 < Date: Fri, 28 Feb 2025 15:44:01 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Cache-Control: public, max-age=60, s-maxage=60
+1 < Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+1 < ETag: W/"d6977ef94dfa1513ac3caa610d5f37798988423cce5ae3a54bf264ed065a28eb"
+1 < Last-Modified: Thu, 27 Feb 2025 19:09:29 GMT
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < x-github-api-version-selected: 2022-11-28
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 < Access-Control-Allow-Origin: *
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < X-Frame-Options: deny
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 0
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Content-Security-Policy: default-src 'none'
+1 < Server: github.com
+1 < Accept-Ranges: bytes
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 49
+1 < X-RateLimit-Reset: 1740759812
+1 < X-RateLimit-Resource: core
+1 < X-RateLimit-Used: 11
+1 < X-GitHub-Request-Id: F2E3:367CB:16D69E:1B3E07:67C1D9C1
+{"login":"patriciorodriguezr","id":37450133,"node_id":"MDQ6VXNlcjM3NDUwMTMz","avatar_url":"https://avatars.githubusercontent.com/u/37450133?v=4","gravatar_id":"","url":"https://api.github.com/users/patriciorodriguezr","html_url":"https://github.com/patriciorodriguezr","followers_url":"https://api.github.com/users/patriciorodriguezr/followers","following_url":"https://api.github.com/users/patriciorodriguezr/following{/other_user}","gists_url":"https://api.github.com/users/patriciorodriguezr/gists{/gist_id}","starred_url":"https://api.github.com/users/patriciorodriguezr/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/patriciorodriguezr/subscriptions","organizations_url":"https://api.github.com/users/patriciorodriguezr/orgs","repos_url":"https://api.github.com/users/patriciorodriguezr/repos","events_url":"https://api.github.com/users/patriciorodriguezr/events{/privacy}","received_events_url":"https://api.github.com/users/patriciorodriguezr/received_events","type":"User","user_view_type":"public","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":6,"public_gists":0,"followers":0,"following":0,"created_at":"2018-03-16T15:50:05Z","updated_at":"2025-02-27T19:09:29Z"}
+
+12:44:01.722 [main]  INFO  com.intuit.karate - [print] Login del usuario: patriciorodriguezr 
+12:44:01.733 [main]  INFO  com.intuit.karate - [print] 6 
+12:44:03.477 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
