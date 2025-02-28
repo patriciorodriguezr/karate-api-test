@@ -1,0 +1,16 @@
+name: CI Básico
+
+on:
+  push:
+    branches: [ main ]  # Se ejecuta al hacer push a la rama main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Máquina virtual de GitHub
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v4  # Descarga tu repositorio
+    - name: Mostrar contenido
+      run: ls -la  # En Linux, muestra los archivos del repositorio
+    - name: Saludar
+      run: echo "¡Hola desde GitHub Actions!"
