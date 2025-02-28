@@ -38,7 +38,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-pass" class="bg-success">1</div>
       <div id="nav-fail" class="bg-danger">2</div>
     </div>
   </div>
@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-02-28 12:23:33 p. m.</div>
+    <div>2025-02-28 12:37:10 p. m.</div>
   </div>
 </div>
 
@@ -59,6 +59,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           </div>
           <div class="nav-item failed">
             <a href="#[2:15]"><span>[2:15]</span> <span>Obtener información de un usuario de GitHub</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:28]"><span>[3:28]</span> <span>Obtener información de un usuario de GitHub</span></a>
           </div>
         </div>
       </div>
@@ -84,7 +87,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>2809</span>
+              <span>ms:</span>&nbsp;<span>2267</span>
             </div>
           </div>
           
@@ -101,7 +104,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;https://api.github.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">88</div>
+    <div class="time-cell passed">105</div>
   </div>
 
    
@@ -157,7 +160,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">2498</div>
+    <div class="time-cell passed">1947</div>
   </div>
 
    
@@ -166,7 +169,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">12:23:31.041 request:
+  <div class="preformatted" data-parent="0.6">12:37:08.292 request:
 1 &gt; GET https://api.github.com/users/octocat
 1 &gt; Host: api.github.com
 1 &gt; Connection: Keep-Alive
@@ -174,9 +177,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-12:23:32.624 response time in milliseconds: 1476
+12:37:09.439 response time in milliseconds: 1065
 1 &lt; 200
-1 &lt; Date: Fri, 28 Feb 2025 15:23:32 GMT
+1 &lt; Date: Fri, 28 Feb 2025 15:37:09 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Cache-Control: public, max-age=60, s-maxage=60
 1 &lt; Vary: Accept,Accept-Encoding, Accept, X-Requested-With
@@ -195,11 +198,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Server: github.com
 1 &lt; Accept-Ranges: bytes
 1 &lt; X-RateLimit-Limit: 60
-1 &lt; X-RateLimit-Remaining: 59
+1 &lt; X-RateLimit-Remaining: 57
 1 &lt; X-RateLimit-Reset: 1740759812
 1 &lt; X-RateLimit-Resource: core
-1 &lt; X-RateLimit-Used: 1
-1 &lt; X-GitHub-Request-Id: F1F1:10CEE8:16786F:1A6506:67C1D4F4
+1 &lt; X-RateLimit-Used: 3
+1 &lt; X-GitHub-Request-Id: F27F:311ED4:164D61:1A8BB5:67C1D825
 {&quot;login&quot;:&quot;octocat&quot;,&quot;id&quot;:583231,&quot;node_id&quot;:&quot;MDQ6VXNlcjU4MzIzMQ==&quot;,&quot;avatar_url&quot;:&quot;https://avatars.githubusercontent.com/u/583231?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/octocat&quot;,&quot;html_url&quot;:&quot;https://github.com/octocat&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/octocat/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/octocat/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/octocat/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/octocat/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/octocat/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/octocat/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/octocat/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/octocat/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/octocat/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;user_view_type&quot;:&quot;public&quot;,&quot;site_admin&quot;:false,&quot;name&quot;:&quot;The Octocat&quot;,&quot;company&quot;:&quot;@github&quot;,&quot;blog&quot;:&quot;https://github.blog&quot;,&quot;location&quot;:&quot;San Francisco&quot;,&quot;email&quot;:null,&quot;hireable&quot;:null,&quot;bio&quot;:null,&quot;twitter_username&quot;:null,&quot;public_repos&quot;:8,&quot;public_gists&quot;:8,&quot;followers&quot;:17090,&quot;following&quot;:9,&quot;created_at&quot;:&quot;2011-01-25T18:44:36Z&quot;,&quot;updated_at&quot;:&quot;2025-02-22T12:25:16Z&quot;}
 
 </div>   
@@ -221,7 +224,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -249,7 +252,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;Respuesta primer escenario:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">139</div>
+    <div class="time-cell passed">132</div>
   </div>
 
    
@@ -258,7 +261,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">12:23:32.809 [print] Respuesta primer escenario: {
+  <div class="preformatted" data-parent="0.8">12:37:09.603 [print] Respuesta primer escenario: {
   &quot;login&quot;: &quot;octocat&quot;,
   &quot;id&quot;: 583231,
   &quot;node_id&quot;: &quot;MDQ6VXNlcjU4MzIzMQ==&quot;,
@@ -313,7 +316,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.login == &#39;octocat&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">74</div>
+    <div class="time-cell passed">76</div>
   </div>
 
    
@@ -341,7 +344,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.name == &#39;The Octocat&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -378,7 +381,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.11">12:23:32.898 src/test/resources/github-api.feature:11
+  <div class="preformatted" data-parent="0.11">12:37:09.711 src/test/resources/github-api.feature:11
 And match response.company == &#39;GitHub&#39;
 match failed: EQUALS
   $ | not equal (STRING:STRING)
@@ -462,7 +465,7 @@ src/test/resources/github-api.feature:11
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>437</span>
+              <span>ms:</span>&nbsp;<span>421</span>
             </div>
           </div>
           
@@ -479,7 +482,7 @@ src/test/resources/github-api.feature:11
         <span>Given</span>&nbsp;<span>url &#39;https://api.github.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -535,7 +538,7 @@ src/test/resources/github-api.feature:11
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">318</div>
+    <div class="time-cell passed">338</div>
   </div>
 
    
@@ -544,7 +547,7 @@ src/test/resources/github-api.feature:11
 
   
 
-  <div class="preformatted" data-parent="0.18">12:23:32.923 request:
+  <div class="preformatted" data-parent="0.18">12:37:09.740 request:
 1 &gt; GET https://api.github.com/users/octocat
 1 &gt; Host: api.github.com
 1 &gt; Connection: Keep-Alive
@@ -552,9 +555,9 @@ src/test/resources/github-api.feature:11
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-12:23:33.234 response time in milliseconds: 237
+12:37:10.072 response time in milliseconds: 246
 1 &lt; 200
-1 &lt; Date: Fri, 28 Feb 2025 15:23:32 GMT
+1 &lt; Date: Fri, 28 Feb 2025 15:37:09 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Cache-Control: public, max-age=60, s-maxage=60
 1 &lt; Vary: Accept,Accept-Encoding, Accept, X-Requested-With
@@ -573,11 +576,11 @@ src/test/resources/github-api.feature:11
 1 &lt; Server: github.com
 1 &lt; Accept-Ranges: bytes
 1 &lt; X-RateLimit-Limit: 60
-1 &lt; X-RateLimit-Remaining: 58
+1 &lt; X-RateLimit-Remaining: 56
 1 &lt; X-RateLimit-Reset: 1740759812
 1 &lt; X-RateLimit-Resource: core
-1 &lt; X-RateLimit-Used: 2
-1 &lt; X-GitHub-Request-Id: F1F2:7851A:147A33:1866EE:67C1D4F5
+1 &lt; X-RateLimit-Used: 4
+1 &lt; X-GitHub-Request-Id: F280:9848E:160207:1A405A:67C1D826
 {&quot;login&quot;:&quot;octocat&quot;,&quot;id&quot;:583231,&quot;node_id&quot;:&quot;MDQ6VXNlcjU4MzIzMQ==&quot;,&quot;avatar_url&quot;:&quot;https://avatars.githubusercontent.com/u/583231?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/octocat&quot;,&quot;html_url&quot;:&quot;https://github.com/octocat&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/octocat/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/octocat/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/octocat/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/octocat/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/octocat/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/octocat/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/octocat/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/octocat/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/octocat/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;user_view_type&quot;:&quot;public&quot;,&quot;site_admin&quot;:false,&quot;name&quot;:&quot;The Octocat&quot;,&quot;company&quot;:&quot;@github&quot;,&quot;blog&quot;:&quot;https://github.blog&quot;,&quot;location&quot;:&quot;San Francisco&quot;,&quot;email&quot;:null,&quot;hireable&quot;:null,&quot;bio&quot;:null,&quot;twitter_username&quot;:null,&quot;public_repos&quot;:8,&quot;public_gists&quot;:8,&quot;followers&quot;:17090,&quot;following&quot;:9,&quot;created_at&quot;:&quot;2011-01-25T18:44:36Z&quot;,&quot;updated_at&quot;:&quot;2025-02-22T12:25:16Z&quot;}
 
 </div>   
@@ -627,7 +630,7 @@ src/test/resources/github-api.feature:11
         <span>And</span>&nbsp;<span>def userLogin = response.login</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -655,7 +658,7 @@ src/test/resources/github-api.feature:11
         <span>And</span>&nbsp;<span>print &#39;DEPURANDO SEGUNDO ESCENARIO&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -664,7 +667,7 @@ src/test/resources/github-api.feature:11
 
   
 
-  <div class="preformatted" data-parent="0.21">12:23:33.244 [print] DEPURANDO SEGUNDO ESCENARIO 
+  <div class="preformatted" data-parent="0.21">12:37:10.085 [print] DEPURANDO SEGUNDO ESCENARIO 
 </div>   
 
   
@@ -684,7 +687,7 @@ src/test/resources/github-api.feature:11
         <span>And</span>&nbsp;<span>print &#39;Login del usuario:&#39;, userLogin</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -693,7 +696,7 @@ src/test/resources/github-api.feature:11
 
   
 
-  <div class="preformatted" data-parent="0.22">12:23:33.248 [print] Login del usuario: octocat 
+  <div class="preformatted" data-parent="0.22">12:37:10.089 [print] Login del usuario: octocat 
 </div>   
 
   
@@ -713,7 +716,7 @@ src/test/resources/github-api.feature:11
         <span>And</span>&nbsp;<span>print &#39;Estado HTTP:&#39;, responseStatus</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -722,7 +725,7 @@ src/test/resources/github-api.feature:11
 
   
 
-  <div class="preformatted" data-parent="0.23">12:23:33.253 [print] Estado HTTP: 200 
+  <div class="preformatted" data-parent="0.23">12:37:10.100 [print] Estado HTTP: 200 
 </div>   
 
   
@@ -742,7 +745,7 @@ src/test/resources/github-api.feature:11
         <span>And</span>&nbsp;<span>print &#39;Respuesta completa:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">13</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -751,7 +754,7 @@ src/test/resources/github-api.feature:11
 
   
 
-  <div class="preformatted" data-parent="0.24">12:23:33.267 [print] Respuesta completa: {
+  <div class="preformatted" data-parent="0.24">12:37:10.110 [print] Respuesta completa: {
   &quot;login&quot;: &quot;octocat&quot;,
   &quot;id&quot;: 583231,
   &quot;node_id&quot;: &quot;MDQ6VXNlcjU4MzIzMQ==&quot;,
@@ -806,7 +809,7 @@ src/test/resources/github-api.feature:11
         <span>And</span>&nbsp;<span>match userLogin == &#39;octocat&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -834,7 +837,7 @@ src/test/resources/github-api.feature:11
         <span>And</span>&nbsp;<span>match response.name == &#39;WRONG_NAME&#39;  # Debería fallar</span>
       </div>
     </div>
-    <div class="time-cell failed">87</div>
+    <div class="time-cell failed">45</div>
   </div>
 
    
@@ -843,7 +846,7 @@ src/test/resources/github-api.feature:11
 
   
 
-  <div class="preformatted" data-parent="0.26">12:23:33.361 src/test/resources/github-api.feature:26
+  <div class="preformatted" data-parent="0.26">12:37:10.163 src/test/resources/github-api.feature:26
 And match response.name == &#39;WRONG_NAME&#39;  # Debería fallar
 js failed:
 &gt;&gt;&gt;&gt;
@@ -863,6 +866,321 @@ org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:14 Expected ; but
 
 src/test/resources/github-api.feature:26
 </div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:28]</span>
+                <span class="scenario-name">Obtener información de un usuario de GitHub</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>514</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.github.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;users/patriciorodriguezr&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">495</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">12:37:10.180 request:
+1 &gt; GET https://api.github.com/users/patriciorodriguezr
+1 &gt; Host: api.github.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:37:10.666 response time in milliseconds: 402
+1 &lt; 200
+1 &lt; Date: Fri, 28 Feb 2025 15:37:10 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Cache-Control: public, max-age=60, s-maxage=60
+1 &lt; Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+1 &lt; ETag: W/&quot;d6977ef94dfa1513ac3caa610d5f37798988423cce5ae3a54bf264ed065a28eb&quot;
+1 &lt; Last-Modified: Thu, 27 Feb 2025 19:09:29 GMT
+1 &lt; X-GitHub-Media-Type: github.v3; format=json
+1 &lt; x-github-api-version-selected: 2022-11-28
+1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 &lt; X-Frame-Options: deny
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;
+1 &lt; Server: github.com
+1 &lt; Accept-Ranges: bytes
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 55
+1 &lt; X-RateLimit-Reset: 1740759812
+1 &lt; X-RateLimit-Resource: core
+1 &lt; X-RateLimit-Used: 5
+1 &lt; X-GitHub-Request-Id: F281:306EF1:16C473:1B02D8:67C1D826
+{&quot;login&quot;:&quot;patriciorodriguezr&quot;,&quot;id&quot;:37450133,&quot;node_id&quot;:&quot;MDQ6VXNlcjM3NDUwMTMz&quot;,&quot;avatar_url&quot;:&quot;https://avatars.githubusercontent.com/u/37450133?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/patriciorodriguezr&quot;,&quot;html_url&quot;:&quot;https://github.com/patriciorodriguezr&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;user_view_type&quot;:&quot;public&quot;,&quot;site_admin&quot;:false,&quot;name&quot;:null,&quot;company&quot;:null,&quot;blog&quot;:&quot;&quot;,&quot;location&quot;:null,&quot;email&quot;:null,&quot;hireable&quot;:null,&quot;bio&quot;:null,&quot;twitter_username&quot;:null,&quot;public_repos&quot;:6,&quot;public_gists&quot;:0,&quot;followers&quot;:0,&quot;following&quot;:0,&quot;created_at&quot;:&quot;2018-03-16T15:50:05Z&quot;,&quot;updated_at&quot;:&quot;2025-02-27T19:09:29Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def userLogin = response.login</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Login del usuario:&#39;, userLogin</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">12:37:10.676 [print] Login del usuario: patriciorodriguezr 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;Respuesta completa:&#39;, response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">12:37:10.689 [print] Respuesta completa: {
+  &quot;login&quot;: &quot;patriciorodriguezr&quot;,
+  &quot;id&quot;: 37450133,
+  &quot;node_id&quot;: &quot;MDQ6VXNlcjM3NDUwMTMz&quot;,
+  &quot;avatar_url&quot;: &quot;https://avatars.githubusercontent.com/u/37450133?v=4&quot;,
+  &quot;gravatar_id&quot;: &quot;&quot;,
+  &quot;url&quot;: &quot;https://api.github.com/users/patriciorodriguezr&quot;,
+  &quot;html_url&quot;: &quot;https://github.com/patriciorodriguezr&quot;,
+  &quot;followers_url&quot;: &quot;https://api.github.com/users/patriciorodriguezr/followers&quot;,
+  &quot;following_url&quot;: &quot;https://api.github.com/users/patriciorodriguezr/following{/other_user}&quot;,
+  &quot;gists_url&quot;: &quot;https://api.github.com/users/patriciorodriguezr/gists{/gist_id}&quot;,
+  &quot;starred_url&quot;: &quot;https://api.github.com/users/patriciorodriguezr/starred{/owner}{/repo}&quot;,
+  &quot;subscriptions_url&quot;: &quot;https://api.github.com/users/patriciorodriguezr/subscriptions&quot;,
+  &quot;organizations_url&quot;: &quot;https://api.github.com/users/patriciorodriguezr/orgs&quot;,
+  &quot;repos_url&quot;: &quot;https://api.github.com/users/patriciorodriguezr/repos&quot;,
+  &quot;events_url&quot;: &quot;https://api.github.com/users/patriciorodriguezr/events{/privacy}&quot;,
+  &quot;received_events_url&quot;: &quot;https://api.github.com/users/patriciorodriguezr/received_events&quot;,
+  &quot;type&quot;: &quot;User&quot;,
+  &quot;user_view_type&quot;: &quot;public&quot;,
+  &quot;site_admin&quot;: false,
+  &quot;name&quot;: null,
+  &quot;company&quot;: null,
+  &quot;blog&quot;: &quot;&quot;,
+  &quot;location&quot;: null,
+  &quot;email&quot;: null,
+  &quot;hireable&quot;: null,
+  &quot;bio&quot;: null,
+  &quot;twitter_username&quot;: null,
+  &quot;public_repos&quot;: 6,
+  &quot;public_gists&quot;: 0,
+  &quot;followers&quot;: 0,
+  &quot;following&quot;: 0,
+  &quot;created_at&quot;: &quot;2018-03-16T15:50:05Z&quot;,
+  &quot;updated_at&quot;: &quot;2025-02-27T19:09:29Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match userLogin == &#39;patriciorodriguezr&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
 
   
 
