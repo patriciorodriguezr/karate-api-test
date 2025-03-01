@@ -1,7 +1,13 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');
 
 const app = express();
+
+// Habilitar CORS para permitir solicitudes desde localhost:5173
+app.use(cors({
+  origin: 'http://localhost:5173', // Origen permitido
+}));
 
 app.get('/flights', async (req, res) => {
   try {

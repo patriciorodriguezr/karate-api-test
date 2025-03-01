@@ -88,7 +88,7 @@ function App() {
         <button type="submit">Buscar</button>
       </form>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {error && <p className="error">{error}</p>}
       {flights.length > 0 ? (
         <>
           <h2>Vuelos de ida</h2>
