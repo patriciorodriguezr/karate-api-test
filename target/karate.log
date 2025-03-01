@@ -2654,3 +2654,25 @@ org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:36 Expected ; but
 
 src/test/resources/github-api.feature:5
 02:33:09.407 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
+02:39:10.603 [main]  INFO  com.intuit.karate - Karate version: 1.5.1
+02:39:11.094 [main]  WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+02:39:12.804 [main]  ERROR com.intuit.karate - src/test/resources/github-api.feature:8
+And param dep_iata = 'JFK'  # Vuelos que salen de JFK
+js failed:
+>>>>
+01: 'JFK'  # Vuelos que salen de JFK
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:7 Expected ; but found error
+'JFK'  # Vuelos que salen de JFK
+       ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.param(ScenarioEngine.java:402)
+
+src/test/resources/github-api.feature:8
+02:39:14.665 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature

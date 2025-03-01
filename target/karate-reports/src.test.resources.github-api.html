@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-03-01 02:33:07 a. m.</div>
+    <div>2025-03-01 02:39:12 a. m.</div>
   </div>
 </div>
 
@@ -81,7 +81,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>137</span>
+              <span>ms:</span>&nbsp;<span>116</span>
             </div>
           </div>
           
@@ -98,7 +98,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;http://api.aviationstack.com/v1/flights&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">110</div>
+    <div class="time-cell passed">92</div>
   </div>
 
    
@@ -116,64 +116,24 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div><div>
   
 
-  
-
   <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref failed">5</div>
+    <div class="step-container">
+      <div class="step-ref passed"></div>
       
-      <div class="step-cell failed">
-        <span>And</span>&nbsp;<span>param access_key = &#39;2a5de4724fa065da2797ec06d6351bc1&#39;  # Reemplaza con tu clave</span>
-      </div>
+      <div class="step-cell comment"># Reemplaza con tu clave</div>
     </div>
-    <div class="time-cell failed">27</div>
+    <div class="time-cell comment"></div>            
   </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.5">02:33:07.676 src/test/resources/github-api.feature:5
-And param access_key = &#39;2a5de4724fa065da2797ec06d6351bc1&#39;  # Reemplaza con tu clave
-js failed:
-&gt;&gt;&gt;&gt;
-01: &#39;2a5de4724fa065da2797ec06d6351bc1&#39;  # Reemplaza con tu clave
-&lt;&lt;&lt;&lt;
-org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:36 Expected ; but found error
-&#39;2a5de4724fa065da2797ec06d6351bc1&#39;  # Reemplaza con tu clave
-                                    ^
-
-- org.graalvm.polyglot.Context.eval(Context.java:428)
-- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
-- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
-- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
-- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
-- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
-- com.intuit.karate.core.ScenarioEngine.param(ScenarioEngine.java:402)
-
-src/test/resources/github-api.feature:5
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
 
   <div class="step-row">
     <div class="step-container" id="0.6">
-      <div class="step-ref skipped">6</div>
+      <div class="step-ref passed">6</div>
       
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>param flight_status = &#39;scheduled&#39;</span>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param access_key = &#39;2a5de4724fa065da2797ec06d6351bc1&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -195,13 +155,13 @@ src/test/resources/github-api.feature:5
 
   <div class="step-row">
     <div class="step-container" id="0.7">
-      <div class="step-ref skipped">7</div>
+      <div class="step-ref passed">7</div>
       
-      <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>param dep_iata = &#39;JFK&#39;  # Vuelos que salen de JFK</span>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param flight_status = &#39;scheduled&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -223,13 +183,13 @@ src/test/resources/github-api.feature:5
 
   <div class="step-row">
     <div class="step-container" id="0.8">
-      <div class="step-ref skipped">8</div>
+      <div class="step-ref failed">8</div>
       
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method GET</span>
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param dep_iata = &#39;JFK&#39;  # Vuelos que salen de JFK</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell failed">21</div>
   </div>
 
    
@@ -238,7 +198,26 @@ src/test/resources/github-api.feature:5
 
   
 
-     
+  <div class="preformatted" data-parent="0.8">02:39:12.808 src/test/resources/github-api.feature:8
+And param dep_iata = &#39;JFK&#39;  # Vuelos que salen de JFK
+js failed:
+&gt;&gt;&gt;&gt;
+01: &#39;JFK&#39;  # Vuelos que salen de JFK
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:7 Expected ; but found error
+&#39;JFK&#39;  # Vuelos que salen de JFK
+       ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.param(ScenarioEngine.java:402)
+
+src/test/resources/github-api.feature:8
+</div>   
 
   
 
@@ -254,7 +233,7 @@ src/test/resources/github-api.feature:5
       <div class="step-ref skipped">9</div>
       
       <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -282,7 +261,7 @@ src/test/resources/github-api.feature:5
       <div class="step-ref skipped">10</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>print &#39;Respuesta de vuelos:&#39;, response</span>
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -310,7 +289,7 @@ src/test/resources/github-api.feature:5
       <div class="step-ref skipped">11</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response.data[0].flight_status == &#39;scheduled&#39;</span>
+        <span>And</span>&nbsp;<span>print &#39;Respuesta de vuelos:&#39;, response</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -338,7 +317,7 @@ src/test/resources/github-api.feature:5
       <div class="step-ref skipped">12</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response.data[0].departure.iata == &#39;JFK&#39;</span>
+        <span>And</span>&nbsp;<span>match response.data[0].flight_status == &#39;scheduled&#39;</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -364,6 +343,34 @@ src/test/resources/github-api.feature:5
   <div class="step-row">
     <div class="step-container" id="0.13">
       <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data[0].departure.iata == &#39;JFK&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
       
       <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>print response.error.message</span>
