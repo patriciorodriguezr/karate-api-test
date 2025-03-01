@@ -2478,3 +2478,47 @@ src/test/resources/github-api.feature:11
 02:01:44.544 [main]  INFO  com.intuit.karate - [print] Login del usuario: patriciorodriguezr 
 02:01:44.566 [main]  INFO  com.intuit.karate - [print] false 
 02:01:45.784 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
+02:25:11.356 [main]  INFO  com.intuit.karate - Karate version: 1.5.1
+02:25:11.877 [main]  WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+02:25:13.877 [main]  ERROR com.intuit.karate - src/test/resources/github-api.feature:5
+And param access_key = 'TU_CLAVE_API'  # Reemplaza con tu clave
+js failed:
+>>>>
+01: 'TU_CLAVE_API'  # Reemplaza con tu clave
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:16 Expected ; but found error
+'TU_CLAVE_API'  # Reemplaza con tu clave
+                ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.param(ScenarioEngine.java:402)
+
+src/test/resources/github-api.feature:5
+02:25:15.714 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
+02:25:56.084 [main]  INFO  com.intuit.karate - Karate version: 1.5.1
+02:25:56.668 [main]  WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+02:25:58.836 [main]  ERROR com.intuit.karate - src/test/resources/github-api.feature:5
+And param access_key = 'TU_C5f2b510fce09a61a7268f52d6b0e7269'  # Reemplaza con tu clave
+js failed:
+>>>>
+01: 'TU_C5f2b510fce09a61a7268f52d6b0e7269'  # Reemplaza con tu clave
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:40 Expected ; but found error
+'TU_C5f2b510fce09a61a7268f52d6b0e7269'  # Reemplaza con tu clave
+                                        ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.param(ScenarioEngine.java:402)
+
+src/test/resources/github-api.feature:5
+02:26:00.580 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature

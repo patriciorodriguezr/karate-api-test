@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,13 +49,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-03-01 02:01:44 a. m.</div>
+    <div>2025-03-01 02:25:58 a. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
-            <a href="#[1:3]"><span>[1:3]</span> <span>Obtener información de un usuario de GitHub</span></a>
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Obtener vuelos programados desde JFK</span></a>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
           <span class="feature-path">src/test/resources/github-api.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Probar la API de GitHub</span>
+          <span class="feature-name">Buscar vuelos comerciales con Aviationstack</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
@@ -76,12 +76,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1:3]</span>
-                <span class="scenario-name">Obtener información de un usuario de GitHub</span>
+                <span class="scenario-name">Obtener vuelos programados desde JFK</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1575</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>127</span>
             </div>
           </div>
           
@@ -95,10 +95,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">4</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &#39;https://api.github.com&#39;</span>
+        <span>Given</span>&nbsp;<span>url &#39;http://api.aviationstack.com/v1/flights&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">97</div>
+    <div class="time-cell passed">103</div>
   </div>
 
    
@@ -120,13 +120,60 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.5">
-      <div class="step-ref passed">5</div>
+      <div class="step-ref failed">5</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;users/patriciorodriguezr&#39;</span>
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param access_key = &#39;TU_C5f2b510fce09a61a7268f52d6b0e7269&#39;  # Reemplaza con tu clave</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">02:25:58.840 src/test/resources/github-api.feature:5
+And param access_key = &#39;TU_C5f2b510fce09a61a7268f52d6b0e7269&#39;  # Reemplaza con tu clave
+js failed:
+&gt;&gt;&gt;&gt;
+01: &#39;TU_C5f2b510fce09a61a7268f52d6b0e7269&#39;  # Reemplaza con tu clave
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:40 Expected ; but found error
+&#39;TU_C5f2b510fce09a61a7268f52d6b0e7269&#39;  # Reemplaza con tu clave
+                                        ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.param(ScenarioEngine.java:402)
+
+src/test/resources/github-api.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref skipped">6</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param flight_status = &#39;scheduled&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -147,78 +194,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref passed">6</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1347</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.6">02:01:43.472 request:
-1 &gt; GET https://api.github.com/users/patriciorodriguezr
-1 &gt; Host: api.github.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-02:01:44.393 response time in milliseconds: 844
-1 &lt; 200
-1 &lt; Date: Sat, 01 Mar 2025 05:01:44 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Cache-Control: public, max-age=60, s-maxage=60
-1 &lt; Vary: Accept,Accept-Encoding, Accept, X-Requested-With
-1 &lt; ETag: W/&quot;e085427fa18603a17af155f0dc87e78a30d2ff7e2f6cdd9a83d1d3ec7485cf9f&quot;
-1 &lt; Last-Modified: Thu, 27 Feb 2025 19:09:29 GMT
-1 &lt; X-GitHub-Media-Type: github.v3; format=json
-1 &lt; x-github-api-version-selected: 2022-11-28
-1 &lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
-1 &lt; X-Frame-Options: deny
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
-1 &lt; Content-Security-Policy: default-src &#39;none&#39;
-1 &lt; Server: github.com
-1 &lt; Accept-Ranges: bytes
-1 &lt; X-RateLimit-Limit: 60
-1 &lt; X-RateLimit-Remaining: 56
-1 &lt; X-RateLimit-Reset: 1740808379
-1 &lt; X-RateLimit-Resource: core
-1 &lt; X-RateLimit-Used: 4
-1 &lt; X-GitHub-Request-Id: C5AF:28A1B5:5C848E:73A523:67C294B8
-{&quot;login&quot;:&quot;patriciorodriguezr&quot;,&quot;id&quot;:37450133,&quot;node_id&quot;:&quot;MDQ6VXNlcjM3NDUwMTMz&quot;,&quot;avatar_url&quot;:&quot;https://avatars.githubusercontent.com/u/37450133?v=4&quot;,&quot;gravatar_id&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://api.github.com/users/patriciorodriguezr&quot;,&quot;html_url&quot;:&quot;https://github.com/patriciorodriguezr&quot;,&quot;followers_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/followers&quot;,&quot;following_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/following{/other_user}&quot;,&quot;gists_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/gists{/gist_id}&quot;,&quot;starred_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/starred{/owner}{/repo}&quot;,&quot;subscriptions_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/subscriptions&quot;,&quot;organizations_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/orgs&quot;,&quot;repos_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/repos&quot;,&quot;events_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/events{/privacy}&quot;,&quot;received_events_url&quot;:&quot;https://api.github.com/users/patriciorodriguezr/received_events&quot;,&quot;type&quot;:&quot;User&quot;,&quot;user_view_type&quot;:&quot;public&quot;,&quot;site_admin&quot;:false,&quot;name&quot;:null,&quot;company&quot;:null,&quot;blog&quot;:&quot;&quot;,&quot;location&quot;:null,&quot;email&quot;:null,&quot;hireable&quot;:null,&quot;bio&quot;:null,&quot;twitter_username&quot;:null,&quot;public_repos&quot;:7,&quot;public_gists&quot;:0,&quot;followers&quot;:0,&quot;following&quot;:0,&quot;created_at&quot;:&quot;2018-03-16T15:50:05Z&quot;,&quot;updated_at&quot;:&quot;2025-02-27T19:09:29Z&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.7">
-      <div class="step-ref passed">7</div>
+      <div class="step-ref skipped">7</div>
       
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param dep_iata = &#39;JFK&#39;  # Vuelos que salen de JFK</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -240,13 +223,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.8">
-      <div class="step-ref passed">8</div>
+      <div class="step-ref skipped">8</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>def userLogin = response.login</span>
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">41</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -268,13 +251,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
+      <div class="step-ref skipped">9</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print &#39;Login del usuario:&#39;, userLogin</span>
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">64</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -283,8 +266,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.9">02:01:44.544 [print] Login del usuario: patriciorodriguezr 
-</div>   
+     
 
   
 
@@ -297,13 +279,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+      <div class="step-ref skipped">10</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print response.public_repos == 6</span>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print &#39;Respuesta de vuelos:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">21</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -312,8 +294,63 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.10">02:01:44.567 [print] false 
-</div>   
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data[0].flight_status == &#39;scheduled&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.data[0].departure.iata == &#39;JFK&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
 
   
 
