@@ -12,4 +12,4 @@ Scenario: Obtener vuelos programados desde JFK
   And print 'Respuesta de vuelos:', response
   And match response.data[0].flight_status == 'scheduled'
   And match response.data[0].departure.iata == 'JFK'
-  And print response.error.message
+  #And print response.error.message
