@@ -1,5 +1,5 @@
-import express from 'express';
-import axios from 'axios';
+const express = require('express');
+const axios = require('axios');
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.get('/flights', async (req, res) => {
     });
     res.json(response.data);
   } catch (error) {
-    res.status(500).json({ error: (error as Error).message });
+    res.status(500).json({ error: error.message });
   }
 });
 
