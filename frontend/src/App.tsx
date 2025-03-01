@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Buscador de Vuelos</h1>
+      <h1>Buscador de Vuelos del Papa Oso</h1>
       <form onSubmit={handleSearch}>
         <label>
           Aeropuerto de salida (IATA):
@@ -48,7 +48,7 @@ function App() {
             maxLength={3}
           />
         </label>
-        <button type="submit">Buscar</button>
+        <button type="submit">Buscar vuelos de Oso</button>
       </form>
 
       {error && <p style={{ color: 'red' }}>{error}</p>}
