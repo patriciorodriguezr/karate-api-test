@@ -2396,3 +2396,85 @@ src/test/resources/github-api.feature:11
 01:53:00.872 [main]  INFO  com.intuit.karate - [print] Login del usuario: patriciorodriguezr 
 01:53:00.954 [main]  INFO  com.intuit.karate - [print] false 
 01:53:03.424 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
+02:00:39.800 [main]  INFO  com.intuit.karate - Karate version: 1.5.1
+02:00:40.297 [main]  WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+02:00:42.284 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://api.github.com/users/patriciorodriguezr
+1 > Host: api.github.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:00:43.266 [main]  DEBUG com.intuit.karate - response time in milliseconds: 906
+1 < 200
+1 < Date: Sat, 01 Mar 2025 05:00:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Cache-Control: public, max-age=60, s-maxage=60
+1 < Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+1 < ETag: W/"e085427fa18603a17af155f0dc87e78a30d2ff7e2f6cdd9a83d1d3ec7485cf9f"
+1 < Last-Modified: Thu, 27 Feb 2025 19:09:29 GMT
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < x-github-api-version-selected: 2022-11-28
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 < Access-Control-Allow-Origin: *
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < X-Frame-Options: deny
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 0
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Content-Security-Policy: default-src 'none'
+1 < Server: github.com
+1 < Accept-Ranges: bytes
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 57
+1 < X-RateLimit-Reset: 1740808379
+1 < X-RateLimit-Resource: core
+1 < X-RateLimit-Used: 3
+1 < X-GitHub-Request-Id: C598:132F7A:5ECD8C:75E7F4:67C2947B
+{"login":"patriciorodriguezr","id":37450133,"node_id":"MDQ6VXNlcjM3NDUwMTMz","avatar_url":"https://avatars.githubusercontent.com/u/37450133?v=4","gravatar_id":"","url":"https://api.github.com/users/patriciorodriguezr","html_url":"https://github.com/patriciorodriguezr","followers_url":"https://api.github.com/users/patriciorodriguezr/followers","following_url":"https://api.github.com/users/patriciorodriguezr/following{/other_user}","gists_url":"https://api.github.com/users/patriciorodriguezr/gists{/gist_id}","starred_url":"https://api.github.com/users/patriciorodriguezr/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/patriciorodriguezr/subscriptions","organizations_url":"https://api.github.com/users/patriciorodriguezr/orgs","repos_url":"https://api.github.com/users/patriciorodriguezr/repos","events_url":"https://api.github.com/users/patriciorodriguezr/events{/privacy}","received_events_url":"https://api.github.com/users/patriciorodriguezr/received_events","type":"User","user_view_type":"public","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":7,"public_gists":0,"followers":0,"following":0,"created_at":"2018-03-16T15:50:05Z","updated_at":"2025-02-27T19:09:29Z"}
+
+02:00:43.456 [main]  INFO  com.intuit.karate - [print] Login del usuario: patriciorodriguezr 
+02:00:43.477 [main]  INFO  com.intuit.karate - [print] false 
+02:00:45.028 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
+02:01:40.958 [main]  INFO  com.intuit.karate - Karate version: 1.5.1
+02:01:41.441 [main]  WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+02:01:43.470 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://api.github.com/users/patriciorodriguezr
+1 > Host: api.github.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/22.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:01:44.386 [main]  DEBUG com.intuit.karate - response time in milliseconds: 844
+1 < 200
+1 < Date: Sat, 01 Mar 2025 05:01:44 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Cache-Control: public, max-age=60, s-maxage=60
+1 < Vary: Accept,Accept-Encoding, Accept, X-Requested-With
+1 < ETag: W/"e085427fa18603a17af155f0dc87e78a30d2ff7e2f6cdd9a83d1d3ec7485cf9f"
+1 < Last-Modified: Thu, 27 Feb 2025 19:09:29 GMT
+1 < X-GitHub-Media-Type: github.v3; format=json
+1 < x-github-api-version-selected: 2022-11-28
+1 < Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+1 < Access-Control-Allow-Origin: *
+1 < Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1 < X-Frame-Options: deny
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 0
+1 < Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+1 < Content-Security-Policy: default-src 'none'
+1 < Server: github.com
+1 < Accept-Ranges: bytes
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 56
+1 < X-RateLimit-Reset: 1740808379
+1 < X-RateLimit-Resource: core
+1 < X-RateLimit-Used: 4
+1 < X-GitHub-Request-Id: C5AF:28A1B5:5C848E:73A523:67C294B8
+{"login":"patriciorodriguezr","id":37450133,"node_id":"MDQ6VXNlcjM3NDUwMTMz","avatar_url":"https://avatars.githubusercontent.com/u/37450133?v=4","gravatar_id":"","url":"https://api.github.com/users/patriciorodriguezr","html_url":"https://github.com/patriciorodriguezr","followers_url":"https://api.github.com/users/patriciorodriguezr/followers","following_url":"https://api.github.com/users/patriciorodriguezr/following{/other_user}","gists_url":"https://api.github.com/users/patriciorodriguezr/gists{/gist_id}","starred_url":"https://api.github.com/users/patriciorodriguezr/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/patriciorodriguezr/subscriptions","organizations_url":"https://api.github.com/users/patriciorodriguezr/orgs","repos_url":"https://api.github.com/users/patriciorodriguezr/repos","events_url":"https://api.github.com/users/patriciorodriguezr/events{/privacy}","received_events_url":"https://api.github.com/users/patriciorodriguezr/received_events","type":"User","user_view_type":"public","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":7,"public_gists":0,"followers":0,"following":0,"created_at":"2018-03-16T15:50:05Z","updated_at":"2025-02-27T19:09:29Z"}
+
+02:01:44.544 [main]  INFO  com.intuit.karate - [print] Login del usuario: patriciorodriguezr 
+02:01:44.566 [main]  INFO  com.intuit.karate - [print] false 
+02:01:45.784 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
