@@ -2544,3 +2544,25 @@ org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:40 Expected ; but
 
 src/test/resources/github-api.feature:5
 02:27:00.286 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
+02:28:17.755 [main]  INFO  com.intuit.karate - Karate version: 1.5.1
+02:28:18.421 [main]  WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+02:28:20.121 [main]  ERROR com.intuit.karate - src/test/resources/github-api.feature:5
+And param access_key = 'C5f2b510fce09a61a7268f52d6b0e7269'  # Reemplaza con tu clave
+js failed:
+>>>>
+01: 'C5f2b510fce09a61a7268f52d6b0e7269'  # Reemplaza con tu clave
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:37 Expected ; but found error
+'C5f2b510fce09a61a7268f52d6b0e7269'  # Reemplaza con tu clave
+                                     ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:428)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1267)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2219)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2138)
+- com.intuit.karate.core.ScenarioEngine.param(ScenarioEngine.java:402)
+
+src/test/resources/github-api.feature:5
+02:28:21.852 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/github-api.feature
